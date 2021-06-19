@@ -60,11 +60,11 @@ li {
 }
 li:before {
 	content: counter(repas); /* on affiche le compteur */
-	padding: 0 20px 6px;
+	padding: 3px 10px 6px;
 	margin-right: 8px;
 	vertical-align: top;
 	background: rgb(119, 102, 136);
-	border-radius: 200px;
+	border-radius: 50px;
 	font-weight: bold;
 	font-size: 0.8em;
 	color: white;		
