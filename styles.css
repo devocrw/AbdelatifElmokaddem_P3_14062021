@@ -74,7 +74,7 @@ li {
 
 li:before {
     content       : counter(repas);
-    padding       : 3px 10px 6px;
+    padding       : 3px 8px 4px;
     margin-right  : 8px;
     vertical-align: top;
     background    : #9356DC;
