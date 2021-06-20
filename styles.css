@@ -40,6 +40,16 @@ header h1 {
 
 }
 
+#Realisations{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;  
+
+
+}
+
+
 .btn_resto {
 
     padding      : 1em 1.4em 1em 1.4em;
@@ -54,9 +64,9 @@ header h1 {
     margin-bottom: 3.7em;
 }
 
-#Productions {
+.Productions {
     background-color: #f6f6f6;
-    /* padding      :  2rem;*/
+    
 
 }
 
@@ -105,21 +115,6 @@ li {
     color         : white;
 }
 
-#Productions {
-    position        : absolute;
-    padding         : 5px 9px 5px 9px;
-    background-color: #9356DC;
-    color           : white;
-    font-size       : 0.8em;
-    border-radius   : 50%;
-    margin-left     : -50px;
-
-}
-
-
-}
-
-
 
 a {
     text-decoration: none;
@@ -132,7 +127,7 @@ a:active {
 }
 
 
-#Productions ::marker {
+ ::marker {
 
     background-color: blueviolet;
     border-radius   : 25px;
@@ -148,12 +143,12 @@ a:active {
 
 
 
-#Productions {
+.Productions {
     margin  : 1.3em;
     position: relative;
 }
 
-#Productions h3 {
+.Productions h3 {
     margin-top: 2.4em;
 }
 
