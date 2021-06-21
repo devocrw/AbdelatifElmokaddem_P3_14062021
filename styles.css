@@ -15,13 +15,13 @@ h1 {
     display         : flex;
     justify-content : center;
     padding         : 0.7em;
-}    
+}
 
 .Zonerecherche input {
     background-color: #EAEAEA;
-    cursor     : pointer;
-    font-weight: bold;
-    border     : none;
+    cursor          : pointer;
+    font-weight     : bold;
+    border          : none;
 }
 
 
@@ -72,12 +72,20 @@ header h1 {
 }
 
 .Productions ul {
-    display: flex;
-    justify-content: space-between;
+    display         : flex;
+    justify-content : space-between;
     background-color: white;
-
-
 }
+
+.menu-options  {
+
+    padding      : 0;
+    list-style   : none;
+    counter-reset: numeroliste;
+}
+
+
+
 
 main {
     background-color: #f6f6f6;
@@ -87,15 +95,19 @@ main {
 /*li {counter-reset: repas; /* on initialise et nomme un compteur */
 
 
-/*ul {counter-reset: repas;} /* on initialise et nomme un compteur */
-li {
-    list-style-type  : none;
-    counter-increment: numeroliste;
-    /* on incrémente le compteur à chaque nouveau li */
-    margin-bottom    : 10px;
+/*ul {
+    counter-reset: none;
 }
 
-.menu-options li {
+/* on initialise et nomme un compteur */
+/*li {
+    list-style-type: none;
+
+    /* on incrémente le compteur à chaque nouveau li */
+    /* margin-bottom    : 10px;*/
+
+
+.Productions li {
     margin-right    : auto;
     margin-left     : auto;
     margin-bottom   : 1.3em;
@@ -112,16 +124,18 @@ li {
 }
 
 .menu-options li ::before {
-    content       : counter(numeroliste);
-    padding       : 6px 10px 6px 10px;
-    margin-right  : 8px;
-    vertical-align: top;
-    background    : #9356DC;
-    border-radius : 20px;
-    box-shadow    : 1px 5px 10px #dfdcdc;
-    font-weight   : bold;
-    font-size     : 0.7em;
-    color         : white;
+    content          : counter(numeroliste);
+    counter-increment: numeroliste;
+    /*list-style: none;*/
+    padding          : 6px 10px 6px 10px;
+    margin-right     : 8px;
+    vertical-align   : top;
+    background       : #9356DC;
+    border-radius    : 20px;
+    box-shadow       : 1px 5px 10px #dfdcdc;
+    font-weight      : bold;
+    font-size        : 0.7em;
+    color            : white;
 }
 
 
@@ -142,12 +156,45 @@ a:active {
     border-radius   : 25px;
 }
 
+
+
+
+
+
+
 .cartemenu-element {
     display        : flex;
     justify-content: space-between;
     width          : 250px;
     align-items    : center;
 }
+
+#Restos {
+    
+    display: flex;
+    ;
+   
+    
+  }
+
+
+.cartemenu img {
+    flex-direction: row;
+    flex-wrap: wrap;
+	flex-direction: column;
+    background-color: white;
+    box-shadow: 0 7px 8px #dfdcdc;
+    border-radius: 22px;
+    object-fit: cover;
+    
+}
+.cartemenu_img-1{
+
+    border-radius: 17px 17px 0 0;
+    object-position: 50% 120%;
+}
+
+
 
 
 
