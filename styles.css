@@ -172,7 +172,8 @@ a:active {
 #Restos {
     
     display: flex;
-    ;
+    flex-direction: row;
+    flex-wrap: wrap;
    
     
   }
@@ -190,7 +191,7 @@ a:active {
 }
 .cartemenu_img-1{
 
-    border-radius: 17px 17px 0 0;
+    /*border-radius: 17px 17px 0 0;*/
     object-position: 50% 120%;
 }
 
