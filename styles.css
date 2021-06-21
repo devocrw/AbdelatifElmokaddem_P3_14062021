@@ -185,9 +185,9 @@ a:active {
     flex-direction  : column;
     background-color: white;
     box-shadow      : 0 7px 8px #dfdcdc;
-    border-radius   : 22px;
+    border-radius   : 22px 22px 0 0;
     object-fit      : cover;
-
+    overflow        : auto;
 }
 
 .cartemenu_img-1 {
