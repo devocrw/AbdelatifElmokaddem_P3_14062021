@@ -71,7 +71,9 @@ header h1 {
     margin-bottom: 3.7em;
 }
 
-.Productions {
+.Productions ul {
+    display: flex;
+    justify-content: space-between;
     background-color: white;
 
 
