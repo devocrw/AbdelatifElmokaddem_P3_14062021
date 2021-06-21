@@ -40,11 +40,11 @@ header h1 {
 
 }
 
-#Realisations{
+#Realisations {
     background-color: #f6f6f6;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;  
+    text-align      : center;
+    padding-left    : 10%;
+    padding-right   : 10%;
 
 
 }
@@ -66,7 +66,7 @@ header h1 {
 
 .Productions {
     background-color: #f6f6f6;
-    
+
 
 }
 
@@ -127,7 +127,7 @@ a:active {
 }
 
 
- ::marker {
+::marker {
 
     background-color: blueviolet;
     border-radius   : 25px;
@@ -157,3 +157,42 @@ a:active {
     margin-right: 1.6em;
 }
 
+
+
+.lienfooter ul {
+    display        : flex;
+    justify-content: space-between;
+
+}
+
+footer {
+    padding         : 1em;
+    background-color: #353535;
+    color           : white;
+    text-align      : left;
+}
+
+footer h2 {
+    margin-top : 0.3em;
+    font-family: Shrikhand, serif;
+    font-size  : 1.2em;
+    font-weight: 100;
+}
+
+.lienfooter li {
+    padding-bottom: 1em;
+}
+
+.lienfooter a {
+    color: white;
+}
+
+.lienfooter a:hover,
+.lienfooter a:active {
+    color: #FF79DA;
+}
+
+.lienfooter .fas {
+    width       : 20px;
+    margin-right: 10px;
+}
