@@ -14,10 +14,17 @@ h1 {
     mix-blend-mode  : darken;
     display         : flex;
     justify-content : center;
-    padding         : 0.7em
+    padding         : 0.7em;
+}    
+
+.Zonerecherche input {
+    background-color: #EAEAEA;
+    cursor     : pointer;
+    font-weight: bold;
+    border     : none;
 }
 
-;
+
 
 
 header {
@@ -65,7 +72,7 @@ header h1 {
 }
 
 .Productions {
-    background-color: #f6f6f6;
+    background-color: white;
 
 
 }
