@@ -1,6 +1,5 @@
 body {
     margin     : auto;
-    padding    : auto;
     font-family: 'Roboto', sans-serif;
     word-wrap  : break-word;
 }
@@ -10,11 +9,14 @@ h1 {
 }
 
 .Zonerecherche {
-    background-color: #EAEAEA;
-    mix-blend-mode  : darken;
-    display         : flex;
-    justify-content : center;
-    padding         : 0.7em;
+    background-color  : #e5e5e5;
+    mix-blend-mode    : darken;
+    display           : flex;
+    justify-content   : center;
+    /*padding         : 0.7em;*/
+    font-size         : 1.1rem;
+    padding-top       : 1rem;
+    padding-bottom    : 1rem;
 }
 
 .Zonerecherche input {
@@ -44,6 +46,7 @@ header h1 {
     justify-content: center;
     padding        : 1rem;
     position       : relative;
+    box-shadow     : 0px -1px 6px 0px;
 
 }
 
@@ -52,6 +55,7 @@ header h1 {
     text-align      : center;
     padding-left    : 10%;
     padding-right   : 10%;
+    padding-top     : 10px;
 
 
 }
@@ -126,7 +130,7 @@ main {
 .menu-options li ::before {
     content          : counter(numeroliste);
     counter-increment: numeroliste;
-    /*list-style     : none;*/
+    list-style       : none;
     padding          : 6px 10px 6px 10px;
     margin-right     : 8px;
     vertical-align   : top;
@@ -138,6 +142,10 @@ main {
     color            : white;
 }
 
+.Productions li {
+    display        : flex;
+    justify-content: space-around;
+}
 
 a {
     text-decoration: none;
@@ -156,8 +164,11 @@ a:active {
     border-radius   : 25px;
 }
 
+.Productions li {
 
-
+    display        : flex;
+    justify-content: space-between;
+}
 
 
 
@@ -165,24 +176,44 @@ a:active {
 .cartemenu-element {
     display        : flex;
     justify-content: space-between;
-    width          : auto;
     align-items    : center;
 }
 
-#Restos {
+#Restos ul {
+    /*display: flex;
+     flex-direction: row; 
+     flex-wrap: wrap;*/
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 35px;
+}
 
-    display       : flex;
-    flex-direction: row;
-    flex-wrap     : wrap;
+#Restos,
+.Productions,
+.Realisations,
+.lienfooter {
+
+    max-width: 1500px;
+    margin   : auto;
+}
 
 
+ul {
+
+    padding      : 0;
+    list-style   : none;
+    counter-reset: numeroliste;
 }
 
 
 .cartemenu img {
-    flex-direction  : row;
-    flex-wrap       : wrap;
-    flex-direction  : column;
+    flex-direction     : row;
+    flex-wrap          : wrap;
+    /* flex-direction  : column;*/
+    /*position         : absolute;*/
+    width              : 100%;
+    top                : auto;
+
     background-color: white;
     box-shadow      : 0 7px 8px #dfdcdc;
     border-radius   : 22px 22px 0 0;
@@ -192,7 +223,7 @@ a:active {
 
 .cartemenu_img-1 {
 
-    /*border-radius: 17px 17px 0 0;*/
+    border-radius  : 17px 17px 0 0;
     object-position: 50% 100%;
 }
 
@@ -210,7 +241,10 @@ a:active {
 }
 
 figcaption {
+    /*position: absolute;*/
+    top             : 100%;
     background-color: white;
+    width           : 100%;
     display         : flex;
     justify-content : space-between;
     align-items     : center;
@@ -219,6 +253,20 @@ figcaption {
 }
 
 
+figcaption h4 {
+
+    margin-top   : 0.7em;
+    margin-bottom: 0.3em;
+    margin-left  : 1em;
+}
+
+figcaption p {
+
+    margin-top   : 0;
+    margin-bottom: 1.2em;
+    font-weight  : 300;
+    margin-left  : 1em;
+}
 
 
 
@@ -228,7 +276,7 @@ figcaption {
     position: relative;
 }
 
-.Productions h3 {
+.Productions h2 {
     margin-top: 2.4em;
 }
 
@@ -237,7 +285,9 @@ figcaption {
     margin-right: 1.6em;
 }
 
-
+.fa .fas {
+    font-weight: 900;
+}
 
 .lienfooter ul {
     display        : flex;
