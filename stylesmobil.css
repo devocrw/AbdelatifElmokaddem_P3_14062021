@@ -113,7 +113,7 @@ button {
 #Restos ul {
 
   display              : grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap                  : 35px;
 }
 
@@ -192,16 +192,17 @@ button {
 }
 
 
-#restos {
+#restos li {
   padding-top   : 1.5em;
   padding-bottom: 2.5em;
   margin        : 1.4em 1.4em 0 1.4em;
   position      : relative;
   user-select   : none;
+  margin-bottom: 6em;
 }
 
 #restos li {
-  margin-bottom: 6em;
+  
 }
 
 
@@ -269,15 +270,6 @@ figcaption p {
   margin-right: 1em;
 }
 
-.cartemenu_nouveau {
-  position        : absolute;
-  right           : 17px;
-  z-index         : 1;
-  padding         : 5px;
-  font-weight     : bold;
-  background-color: #99E2D0;
-  color           : #278870;
-}
 
 
 
@@ -288,12 +280,7 @@ figcaption p {
 
 
   
-#Restos ul {
 
-  display              : grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap                  : 35px;
-}
 
   .Productions li::before {
     margin-left: -40px;
@@ -325,13 +312,6 @@ figcaption p {
     object-position: 20% -45px;
   }
 }
-
-@media all and (min-width: 414px) and (max-width: 736px) {
-  #restos ul {
-    display              : grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap                  : 35px;
-  }
 
 
 /* Surface */
@@ -378,10 +358,24 @@ figcaption p {
 /* LARGE */
 @media screen and (min-width: 1100px) {
 
-  #Restos,
-  .Realisations,
+  #Restos ul {
+  /*.Realisations,
   .Productions .infofooter {
     max-width: 1000px;
     margin   : auto;
-  }
+  }*/
+
+  
+
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 35px;
+  
+
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
+  margin: 1.4em 1.4em 0 1.4em;
+  position: relative;
+  user-select: none;
+}
 }
