@@ -1,0 +1,26 @@
+.carte_formule{
+    display: flex;
+    width: 350px;
+
+}
+.carte_infos {
+    flex: 100%;
+}
+.sousinfo {
+    display: flex;
+}
+
+.btncheck {
+    display: none;
+    flex: 20%;
+    height: 100%;
+    width: 50%;
+}
+
+.carte_formule:hover .btncheck {
+    display: block;
+}
+
+.carte_formule:hover .carte_infos {
+    flex: 80%;
+}
