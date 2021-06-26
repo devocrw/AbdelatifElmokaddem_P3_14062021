@@ -96,6 +96,7 @@ button {
 .btn_resto:active {
   opacity   : 0.9;
   box-shadow: 1px 3px 5px #696666;
+  background   : linear-gradient(to bottom right, #fb9be0, #bc87fd);
 }
 
 
@@ -109,11 +110,13 @@ button {
   margin   : auto;
 }
 
+ 
+ 
 
 #Restos ul {
-
+  
   display              : grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap                  : 35px;
 }
 
@@ -131,7 +134,7 @@ button {
   width      : 80%;
 }
 
-#Realisations p {
+.Realisations p {
   margin-top : 15px;
   color      : gray;
   font-size  : 1em;
@@ -139,7 +142,7 @@ button {
 }
 
 
-.Productions {
+#Restos li {
   margin  : 1.3em;
   position: relative;
 }
@@ -201,7 +204,7 @@ button {
   margin-bottom : 6em;
 }
 
-#restos li {}
+
 
 
 
@@ -248,19 +251,19 @@ figcaption p {
   object-fit   : cover;
 }
 
-.cartemenu_img-1 {
+.cartemenu_img-corect1 {
   object-position: 50% 100%;
 }
 
-.cartemenu_img-2 {
+.cartemenu_img-corect2 {
   object-position: 50% 62%;
 }
 
-.cartemenu_img-3 {
+.cartemenu_img-corect3 {
   object-position: 50% 100%;
 }
 
-.cartemenu_img-4 {
+.cartemenu_img-corect4 {
   object-position: 50% 95%;
 }
 
@@ -271,10 +274,17 @@ figcaption p {
 
 
 
-@media all and (min-width: 200px) and (max-width: 374px) {
+@media all and (min-width: 200px) and (max-width: 360px) {
   .Productions li {
     font-size: smaller;
+    
   }
+
+#Restos ul {
+  display              : grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap                  : 35px;
+}
 
 
 
@@ -285,7 +295,15 @@ figcaption p {
   }
 }
 
-@media all and (min-width: 600px) and (max-width: 1024px) {
+@media all and (min-width: 375px) and (max-width: 667px) {
+
+#Restos ul {
+  display              : grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap                  : 35px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
   #restos ul {
     display              : grid;
     grid-template-columns: repeat(2, 1fr);
@@ -370,4 +388,5 @@ figcaption p {
 
 
   }
-}
+ }
+  }
