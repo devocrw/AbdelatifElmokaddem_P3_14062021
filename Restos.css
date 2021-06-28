@@ -1,5 +1,5 @@
-/* PAGE MENU */
-/* HEADER */
+/*** Carte du menu ***/
+/*** En tete page web ***/
 .headermenu {
   position  : relative;
   margin-top: 20px;
@@ -32,4 +32,13 @@
 
 .photoentete_img {
   object-position: 50% 50%;
+}
+
+.menu {
+  display: block;
+}
+.menu_titre, .menu .carte {
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+  padding-top: 0.5em;
 }
