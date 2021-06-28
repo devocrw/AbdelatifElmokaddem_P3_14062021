@@ -1,5 +1,12 @@
 /*** Carte du menu ***/
 /*** En tete page web ***/
+
+body {
+  
+  font-family: Shrikhand, serif;
+} 
+
+
 .headermenu {
   position  : relative;
   margin-top: 20px;
