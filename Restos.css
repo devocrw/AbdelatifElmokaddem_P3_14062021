@@ -2,9 +2,9 @@
 /*** En tete page web ***/
 
 body {
-  
+
   font-family: Shrikhand, serif;
-} 
+}
 
 
 .headermenu {
@@ -44,8 +44,16 @@ body {
 .menu {
   display: block;
 }
-.menu_titre, .menu .carte {
-  padding-left: 1.4em;
+
+.menu_titre,
+.menu .carte {
+  padding-left : 1.4em;
   padding-right: 1.4em;
-  padding-top: 0.5em;
+  padding-top  : 0.5em;
+}
+
+.menu_titre {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
 }
