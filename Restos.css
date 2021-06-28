@@ -1,26 +1,35 @@
-.carte_formule{
-    display: flex;
-    width: 350px;
-
-}
-.carte_infos {
-    flex: 100%;
-}
-.sousinfo {
-    display: flex;
+/* PAGE MENU */
+/* HEADER */
+.headermenu {
+  position  : relative;
+  margin-top: 20px;
+  display   : flex;
 }
 
-.btncheck {
-    display: none;
-    flex: 20%;
-    height: 100%;
-    width: 50%;
+.headermenu .fas {
+  position   : absolute;
+  top        : 0.6em;
+  margin-left: 1.5em;
+  font-size  : 1.3em;
 }
 
-.carte_formule:hover .btncheck {
-    display: block;
+.headermenu h1 {
+  max-width: 100%;
+  margin   : auto;
 }
 
-.carte_formule:hover .carte_infos {
-    flex: 80%;
+.photoentete {
+  margin: 0;
+}
+
+.photoentete {
+  max-width      : 100%;
+  min-width      : 100%;
+  object-fit     : cover;
+  object-position: 50% 60%;
+  height         : 40vh;
+}
+
+.photoentete_img {
+  object-position: 50% 50%;
 }
