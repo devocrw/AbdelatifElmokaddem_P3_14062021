@@ -63,3 +63,19 @@ body {
   font-size: 1.8em;
   font-weight: 200;
 }
+
+.carte_titre {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.carte_detail {
+  height: 55px;
+  margin-bottom: 1em;
+  background-color: white;
+  display: flex;
+  border-radius: 18px;
+  box-shadow: 0 7px 8px #dfdcdc;
+  overflow: hidden;
+  cursor: pointer;
+}
