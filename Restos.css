@@ -79,3 +79,18 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
+
+.carte_detail-anmt1 {
+  animation: menuanmt 1s ease-out;
+  opacity: 1;
+}
+
+.carte_prix {
+  margin-right: -20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-weight: bold;
+  transform: translateX(120%);
+  transition: 0.6s;
+}
