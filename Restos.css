@@ -102,5 +102,13 @@ body {
   border          : none;
   background-color: #99E2D0;
   cursor          : pointer;
+  transform       : translateX(100%);
+  transition      : 0.7s;
+}
 
+
+.carte_detail:hover  .carte_prix,
+.carte_detail:active .carte_prix {
+  transform  : translateX(-130%);
+  margin-left: 30px;
 }
