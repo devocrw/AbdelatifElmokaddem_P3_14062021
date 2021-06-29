@@ -102,7 +102,7 @@ body {
   border          : none;
   background-color: #99E2D0;
   cursor          : pointer;
-  transform       : translateX();
+  transform       : translateX(100%);
 
 }
 
@@ -132,6 +132,10 @@ body {
   font-size    : 1.1em;
 }
 
+.carte_detail:hover > .carte_adapter,
+.carte_detail:active > .carte_adapter {
+  transform: translateX(0%);
+}
 .carte_adapter .fas {
   color    : white;
   font-size: 2em;
