@@ -102,8 +102,8 @@ body {
   border          : none;
   background-color: #99E2D0;
   cursor          : pointer;
-  transform       : translateX(100%);
-  transition      : 0.7s;
+  transform       : translateX();
+  
 }
 
 
