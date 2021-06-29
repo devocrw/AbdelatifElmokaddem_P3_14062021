@@ -136,3 +136,9 @@ body {
   color    : white;
   font-size: 2em;
 }
+
+.carte_infos p {
+  margin-top: 0;
+  font-size: 0.95em;
+  font-weight: 300;
+}
