@@ -112,3 +112,9 @@ body {
   transform  : translateX(-130%);
   margin-left: 30px;
 }
+
+.carte_infos {
+  width: 170%;
+  padding-left: 0.7em;
+  overflow: hidden;
+}
