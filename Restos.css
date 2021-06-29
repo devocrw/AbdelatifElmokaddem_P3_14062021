@@ -118,3 +118,11 @@ body {
   padding-left: 0.7em;
   overflow: hidden;
 }
+
+.carte_infos h4 {
+  margin-bottom: 0.3em;
+  margin-top: 0.8em;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
