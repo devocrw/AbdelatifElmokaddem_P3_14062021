@@ -77,7 +77,7 @@ body {
   border-radius   : 18px;
   box-shadow      : 0 7px 8px #dfdcdc;
   overflow        : hidden;
- cursor          : pointer;
+  cursor          : pointer;
 }
 
 .carte_detail-anmt1 {
@@ -113,6 +113,12 @@ body {
   margin-left: 30px;
 }
 
+.carte_detail:hover .fas,
+.carte_detail:active .fas {
+  transform : rotate(-360deg);
+  transition: 0.7s ease-in-out;
+}
+
 .carte_infos {
   width       : 170%;
   padding-left: 0.7em;
@@ -127,6 +133,6 @@ body {
 }
 
 .carte_adapter .fas {
-  color: white;
+  color    : white;
   font-size: 2em;
 }
