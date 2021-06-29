@@ -77,7 +77,7 @@ body {
   border-radius   : 18px;
   box-shadow      : 0 7px 8px #dfdcdc;
   overflow        : hidden;
-  cursor          : pointer;
+ cursor          : pointer;
 }
 
 .carte_detail-anmt1 {
@@ -103,26 +103,30 @@ body {
   background-color: #99E2D0;
   cursor          : pointer;
   transform       : translateX();
-  
+
 }
 
 
-.carte_detail:hover  .carte_prix,
+.carte_detail:hover .carte_prix,
 .carte_detail:active .carte_prix {
   transform  : translateX(-130%);
   margin-left: 30px;
 }
 
 .carte_infos {
-  width: 170%;
+  width       : 170%;
   padding-left: 0.7em;
-  overflow: hidden;
+  overflow    : hidden;
 }
 
 .carte_infos h4 {
   margin-bottom: 0.3em;
-  margin-top: 0.8em;
-  font-weight: 500;
-  font-size: 1.1em;
+  margin-top   : 0.8em;
+  font-weight  : 500;
+  font-size    : 1.1em;
 }
 
+.carte_adapter .fas {
+  color: white;
+  font-size: 2em;
+}
