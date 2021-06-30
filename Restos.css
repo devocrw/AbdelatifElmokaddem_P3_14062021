@@ -169,7 +169,10 @@ body {
   font-weight: 500;
 }
 
-
+.toper {
+  display: flex;
+  justify-content: center;
+}
 
 
 
