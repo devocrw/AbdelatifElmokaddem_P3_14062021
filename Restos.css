@@ -41,6 +41,21 @@ body {
   object-position: 50% 50%;
 }
 
+.mainmenu {
+  max-width: 1280px;
+  margin: auto;
+
+}
+
+.menu {
+  margin-top: -10rem;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #f6f6f6;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+}
+
 .menu {
   display: block;
 }
