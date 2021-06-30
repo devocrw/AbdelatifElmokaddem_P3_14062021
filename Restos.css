@@ -182,11 +182,11 @@ body {
 /* MEDIA QUERIES - PAGE MENU */
 /* SMALL */
 @media all and (min-width: 300px) and (max-width: 568px) {
-  .menu__titre h2 {
+  .menu_titre h2 {
     font-size: 1.4em;
   }
 
-  .encart__prix {
+  .carte_prix {
     transform: translateX(90%);
   }
 }
