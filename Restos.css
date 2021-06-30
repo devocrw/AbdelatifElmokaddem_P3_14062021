@@ -3,7 +3,7 @@
 
 body {
 
-  font-family: Shrikhand, serif;
+  font-family: "Roboto", serif;
 }
 
 
@@ -23,6 +23,13 @@ body {
 .headermenu h1 {
   max-width: 100%;
   margin   : auto;
+  
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-family: "Shrikhand", cursive;
 }
 
 .photoentete {
@@ -80,7 +87,7 @@ body {
 }
 
 .menu_titre h2 {
-
+  font-family: "Shrikhand", cursive;
   font-size  : 1.8em;
   font-weight: 200;
 }
@@ -170,10 +177,32 @@ body {
 }
 
 .toper {
-  display: flex;
+  display        : flex;
   justify-content: center;
+
 }
 
+.btndegrade {
+  background   : linear-gradient(#e67ddd, #9356DC);
+  color        : #dfdcdc;
+  border       : none;
+  padding      : 15px 50px;
+  border-radius: 100px;
+  font-weight  : bold;
+  font-family  : "Raleway", "Sans serif";
+  font-size    : 1em;
+  cursor       : pointer;
+  margin       : 0 -50px;
+  margin-top   : 2.7em;
+  margin-bottom: 3.7em;
+
+}
+
+.btndegrade:hover,
+.btndegrade:active {
+  opacity   : 0.9;
+  box-shadow: 1px 3px 5px #696666;
+}
 
 
 
