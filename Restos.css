@@ -1,5 +1,4 @@
-/*** Carte menu ***/
-/*** Haut page web ***/
+/******** Carte menu A la française ********/
 
 body {
 
@@ -43,12 +42,14 @@ body {
   object-fit     : cover;
   object-position: 50% 60%;
   height         : 40vh;
-  border-radius  : 20px;
+  border-radius  : 15px;
 }
 
 .photoentete_img {
   object-position: 50% 50%;
 }
+
+/******** Menu restaurant ********/
 
 .mainmenu {
   position        : relative;
@@ -59,17 +60,6 @@ body {
   margin-right    : auto;
   margin-top      : -55px;
 }
-
-
-/*.mainmenu {
-  position        : relative;
-  width           : 100%;
-  margin-top      : -55px;
-  background-color: #f6f6f6;
-  border-radius   : 40px 40px 0 0;
-
-}*/
-
 
 .menu {
   display: block;
@@ -91,14 +81,8 @@ body {
 .menu_titre h2 {
   font-family: "Shrikhand", cursive;
   font-size  : 1.8em;
-  font-weight: 200;
+  font-weight: 100;
 }
-
-/*.carte_titre  {
-    font-size  : 600;
-    text-transform: uppercase;
-    font-weight: 100px;
-}*/
 
 .carte_detail {
   height          : 75px;
@@ -157,9 +141,8 @@ body {
 }
 
 .carte_infos h4 {
-  margin-bottom  : 0.3em;
-  margin-top     : 0.8em;
-  /*font-size    : 400;*/
+  margin-bottom: 0.3em;
+  margin-top   : 0.8em;
 }
 
 .carte_detail:hover>.carte_adapter,
@@ -173,11 +156,12 @@ body {
 }
 
 .carte_infos p {
-  margin-top   : 0;
-  font-size    : 400;
-  /*font-weight: 500;*/
+  margin-top: 0;
+  font-size : 400;
 
 }
+
+/**** Bouton de validation ****/
 
 .toper {
   display        : flex;
@@ -208,24 +192,64 @@ body {
 }
 
 
-lienfooter ul {
-  display: flex;
-  justify-content: space-between;
-  
-  }
-  
-  footer {
-      padding         : 1em;
-      background-color: #353535;
-      color           : white;
-      text-align      : left;
-  }
-  
-  
+
+/**** Menu footer ****/
+
+.infofooter_list {
+  display       : flex;
+  flex-direction: column;
+  padding       : 0.9em;
+}
+
+.infofooter {
+  padding         : 1em;
+  background-color: #353535;
+  color           : white;
+  text-align      : left;
+  border-radius   : 10px;
+}
+
+.infofooter h2 {
+  margin-top : 0.3em;
+  font-family: Shrikhand, serif;
+  font-size  : 1.1em;
+  font-weight: 0.2em;
+  margin     : 0.6em;
+}
+
+.infofooter li {
+  padding-bottom: 1em;
+}
+
+.infofooter a {
+  color: white;
+}
+
+.infofooter a:hover,
+.infofooter a:active {
+  color: #FF79DA;
+}
+
+.infofooter .fas {
+  width       : 20px;
+  margin-right: 10px;
+}
+
+.infofooter_list,
+.logofooter {
+
+  max-width : 1350px;
+  margin    : auto;
+  list-style: none;
+
+}
 
 
-/* MEDIA QUERIES - PAGE MENU */
-/*** Mobiles ***/
+
+
+/******** MEDIA QUERIES - PAGE MENU ********/
+
+/**** Mobiles ****/
 @media all and (min-width: 300px) and (max-width: 568px) {
   .menu_titre h2 {
     font-size: 1.4em;
@@ -236,7 +260,7 @@ lienfooter ul {
   }
 }
 
-/*** Surfaces ***/
+/**** Surfaces ****/
 @media screen and (min-width: 930px) {
   .menu {
     display              : grid;
@@ -245,7 +269,7 @@ lienfooter ul {
   }
 }
 
-/*** Desktop ***/
+/**** Desktop ****/
 @media screen and (min-width: 1200px) {
   .mainmenu {
     position    : relative;
