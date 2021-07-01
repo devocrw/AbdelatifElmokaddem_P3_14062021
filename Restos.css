@@ -78,6 +78,14 @@ body {
   align-items    : center;
 }
 
+.carte_titre {
+  margin-bottom : 1.3rem;
+  text-transform: uppercase;
+  font-weight   : 400;
+  color         : #444444;
+
+}
+
 .menu_titre h2 {
   font-family: "Shrikhand", cursive;
   font-size  : 1.8em;
