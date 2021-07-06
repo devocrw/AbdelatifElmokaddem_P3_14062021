@@ -49,6 +49,31 @@ body {
   object-position: 50% 50%;
 }
 
+.photoentete-ajust1 {
+  width          : 100%;
+  object-fit     : cover;
+  object-position: 50% 51%;
+  height         : 40vh;
+  border-radius  : 15px;
+}
+
+.photoentete-ajust2 {
+  width          : 100%;
+  object-fit     : cover;
+  object-position: 30% 65%;
+  height         : 40vh;
+  border-radius  : 15px;
+}
+
+.photoentete-ajust3 {
+  width          : 100%;
+  object-fit     : cover;
+  object-position: 30% 62%;
+  height         : 40vh;
+  border-radius  : 15px;
+}
+
+
 /******** Menu restaurant ********/
 
 .mainmenu {
@@ -188,17 +213,17 @@ body {
 
 .btndegrade {
   background   : linear-gradient(to bottom right, #e67ddd, #9356DC);
-  color           : #dfdcdc;
-  border          : none;
-  padding         : 15px 50px;
-  border-radius   : 100px;
-  font-weight     : bold;
-  font-family     : "Raleway", "Sans serif";
-  font-size       : 1em;
-  cursor          : pointer;
-  margin          : 0 -50px;
-  margin-top      : 2.7em;
-  margin-bottom   : 3.7em;
+  color        : #dfdcdc;
+  border       : none;
+  padding      : 15px 50px;
+  border-radius: 100px;
+  font-weight  : bold;
+  font-family  : "Raleway", "Sans serif";
+  font-size    : 1em;
+  cursor       : pointer;
+  margin       : 0 -50px;
+  margin-top   : 2.7em;
+  margin-bottom: 3.7em;
 }
 
 .btndegrade:hover,
@@ -206,30 +231,6 @@ body {
   opacity   : 0.9;
   box-shadow: 1px 3px 5px #696666;
 }
-
-/*.tagscoeur {
-  position: relative;
-  right: -256px;
-  bottom: 35px;
-  opacity: 1;
-  height: 23px;
-  width: 25px;
-  transition-duration: 0.5s;
-  fill: transparent;
-  stroke: #000000;
-  stroke-width: 50px;
-}*/
-
-/*.tagscoeur:hover {
-  opacity     : 1;
-  height      : 24px;
-  width       : 25px;
-  fill        : url(#myGradient);
-  stroke-width: 0px;
-  cursor      : pointer;
-}*/
-
-  
 
 
 
@@ -259,11 +260,12 @@ body {
 
 .infofooter li {
   padding-bottom: 1em;
-  /*text-decoration-line: none;*/
+  list-style    : none;
 }
 
 .infofooter a {
-  color: white;
+  color          : white;
+  text-decoration: none;
 }
 
 .infofooter a:hover,
@@ -282,8 +284,8 @@ body {
   max-width : 1350px;
   margin    : auto;
   list-style: none;
-  cursor: pointer;
-  
+  cursor    : pointer;
+
 
 }
 
