@@ -8,6 +8,7 @@ body {
 
 /**** Partie reservation et composition menu ****/
 /*** Logo presentation ***/
+
 .Ohmy_logo {
   display        : flex;
   flex-direction : row;
@@ -52,11 +53,11 @@ button {
   mix-blend-mode  : darken;
   display         : flex;
   justify-content : center;
-  padding         : 0.7em;
+  padding         : 1.1em;
 }
 
 .Zonerecherche .fas {
-  margin-right: 1em;
+  margin-right: 0.4em;
 }
 
 .Zonerecherche_input {
@@ -64,6 +65,7 @@ button {
   background-color: #EAEAEA;
   font-weight     : bold;
   border          : none;
+  font-size       : 0.9em;
 }
 
 .Zonerecherche_input::placeholder {
@@ -100,7 +102,6 @@ button {
   margin-bottom: 3.7em;
 }
 
-
 .btn_resto:hover,
 .btn_resto:active {
   opacity   : 0.9;
@@ -109,12 +110,16 @@ button {
 }
 
 /****Les menus a la carte ****/
+
 main {
   background-color: #f6f6f6;
   margin-top      : 4em;
   padding-bottom  : 0.1em;
 }
 
+.titre {
+  margin-left: 0.6em;
+}
 
 #Restos,
 .Productions,
@@ -123,16 +128,6 @@ main {
 
   max-width: 1280px;
   margin   : auto;
-}
-
-
-
-
-#Restos ul {
-
-  display              : grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap                  : 35px;
 }
 
 #Realisations {
@@ -154,6 +149,15 @@ main {
   color      : gray;
   font-size  : 1em;
   font-weight: 300;
+}
+
+/**** presentation des differents menu ****/
+
+#Restos ul {
+
+  display              : grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap                  : 35px;
 }
 
 
@@ -203,11 +207,21 @@ main {
   counter-increment: numeroliste;
   content          : counter(numeroliste);
   background-color : #9356DC;
-  color            : white;
+  color            : rgba(255, 255, 255, 0.801);
   font-size        : 0.8em;
   border-radius    : 50%;
   margin-left      : -50px;
 }
+
+.Productions li {
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  background: white;
+}  
 
 
 #Restos {
@@ -232,7 +246,7 @@ main {
   margin: 1.3em;
 }
 
-
+/**** Presentation des types de formule ****/
 figcaption {
   position        : absolute;
   top             : 100%;
@@ -292,9 +306,40 @@ figcaption p {
   object-position: 50% 95%;
 }
 
-.cartemenu .tasgcoeur {
+.cartemenu .tagscoeur {
   margin-right: 1em;
 }
+
+.tagscoeur {
+
+  position   : relative;
+  height     : 19px;
+  width      : 21.2px;
+  padding-top: 1.2px;
+  overflow   : hidden;
+  cursor     : pointer;
+}
+
+.tagscoeur :active::before,
+.tagscoeur :hover::before {
+  content       : "";
+  position      : absolute;
+  top           : 10;
+  background    : linear-gradient(0deg, #FF79DA 10%, #9356DC 100%);
+  transform     : translateX(100%);
+  transition    : 0.3s ease-out;
+
+}
+
+.tagscoeur :active::after,
+.tagscoeur :hover::after {
+  content         : "♥";
+  font-weight     : bold;
+  background-color: white;
+  mix-blend-mode  : lighten;
+}
+
+
 
 /**** Footer ****/
 
@@ -317,7 +362,9 @@ footer h2 {
 }
 
 .lienfooter a {
-  color: white;
+  color          : white;
+  text-decoration: none;
+
 }
 
 .lienfooter a:hover,
@@ -346,10 +393,6 @@ footer h2 {
     grid-template-columns: repeat(1, 1fr);
     gap                  : 35px;
   }
-
-
-
-
 
   .Productions li::before {
     margin-left: -40px;
@@ -433,19 +476,13 @@ footer h2 {
 
     .Productions {
       margin: 1.3em;
-
     }
 
     #Restos,
     .Realisations,
     .infofooter {
-
       max-width: 1000px;
       margin   : auto;
-
-
-
-
 
 
 
