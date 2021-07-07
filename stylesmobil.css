@@ -105,8 +105,9 @@ button {
 .btn_resto:hover,
 .btn_resto:active {
   opacity   : 0.9;
-  box-shadow: 1px 3px 5px #696666;
+  box-shadow: 1px 3px 10px #696666;
   background: linear-gradient(to bottom right, #fb9be0, #bc87fd);
+ 
 }
 
 /****Les menus a la carte ****/
@@ -280,6 +281,17 @@ figcaption p {
   background-color: white;
   box-shadow      : 0 7px 8px #dfdcdc;
   border-radius   : 22px;
+}
+
+
+.cartemenu_nouveau {
+  position        : absolute;
+  right           : 17px;
+  z-index         : 1;
+  padding         : 5px;
+  font-weight     : bold;
+  background-color: #99E2D0;
+  color           : #278870;
 }
 
 .cartemenu_img {
