@@ -1,8 +1,39 @@
 /******** Carte menu A la française ********/
-
+/**** Page d'accueil restaurant ****/
 body {
 
   font-family: "Roboto", serif;
+}
+
+
+@keyframes menuanmt {
+  from {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes rondbattement {
+  from {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.2);
+    transform: rotate(-0.5turn);
+    opacity: 0;
+  }
+}
+@keyframes loading-disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 
@@ -310,6 +341,70 @@ body {
 
 
 
+  /* Animation cartes menus */
+
+  .carte_detail-anmt1 {
+    animation: menuanmt 1s ease-out;
+    opacity: 1;
+  }
+  .carte_detail-anmt2 {
+    animation: menuanmt 1s 0.2s ease-out;
+    opacity: 1;
+  }
+  .carte_detail-anmt3 {
+    animation: menuanmt 1s 0.3s ease-out;
+    opacity: 1;
+  }
+  .carte_detail-anmt4 {
+    animation: menuanmt 1s 0.4s ease-out;
+    opacity: 1;
+  }
+  
+  .carte_infos {
+    width: 150%;
+    padding-left: 0.7em;
+    overflow: hidden;
+  }
+  .carte_infos p, .carte_infos h4 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .carte_infos h4 {
+    margin-bottom: 0.3em;
+    margin-top: 0.8em;
+    font-weight: 500;
+    font-size: 1.1em;
+  }
+  .carte_infos p {
+    margin-top: 0;
+    font-size: 0.95em;
+    font-weight: 300;
+  }
+  
+  .carte_prix {
+    margin-right: -20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-weight: bold;
+    transform: translateX(120%);
+    transition: 0.6s;
+  }
+  
+  .carte_adapter {
+    height: 100%;
+    width: 9.5em;
+    border: none;
+    background-color: #99E2D0;
+    cursor: pointer;
+    transform: translateX(101%);
+    transition: 0.6s;
+  }
+  .carte_adapter .fas {
+    color: white;
+    font-size: 2em;
+  }
 
 /******** MEDIA QUERIES - PAGE MENU ********/
 
@@ -343,3 +438,4 @@ body {
     margin-top  : -55px;
   }
 }
+
