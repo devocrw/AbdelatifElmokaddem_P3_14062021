@@ -39,13 +39,11 @@ body {
   height         : 100%;
   width          : 100%;
   padding-bottom : 20px;
-  margin-top     : -30px;
   background     : rgb(255, 255, 255);
   font-family    : Shrikhand, serif;
   font-size      : 0.6em;
   display        : flex;
-  flex-direction : column;
-  justify-content: center;
+ justify-content: center;
   align-items    : center;
   animation      : loading-disparition 0.5s 3s ease-in forwards;
 }
